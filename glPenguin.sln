@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glPenguin", "glPenguin.vcproj", "{FF8D50F4-D936-43F9-BD2A-487DD8BE9DDE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FF8D50F4-D936-43F9-BD2A-487DD8BE9DDE}.Debug.ActiveCfg = Debug|Win32
+		{FF8D50F4-D936-43F9-BD2A-487DD8BE9DDE}.Debug.Build.0 = Debug|Win32
+		{FF8D50F4-D936-43F9-BD2A-487DD8BE9DDE}.Release.ActiveCfg = Release|Win32
+		{FF8D50F4-D936-43F9-BD2A-487DD8BE9DDE}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

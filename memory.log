@@ -1,0 +1,621 @@
+--------------------------------------------------------------------------------
+
+      memory.log - Memory logging file created on Sun Sep 28 21:42:31 2008
+
+--------------------------------------------------------------------------------
+
+This file contains a log of all memory operations performed during the last run.
+
+Interrogate this file to track errors or to help track down memory-related
+issues. You can do this by tracing the allocations performed by a specific owner
+or by tracking a specific address through a series of allocations and
+reallocations.
+
+There is a lot of useful information here which, when used creatively, can be
+extremely helpful.
+
+Note that the following guides are used throughout this file:
+
+   [!] - Error
+   [+] - Allocation
+   [~] - Reallocation
+   [-] - Deallocation
+   [I] - Generic information
+   [F] - Failure induced for the purpose of stress-testing your application
+   [D] - Information used for debugging this memory manager
+
+...so, to find all errors in the file, search for "[!]"
+
+--------------------------------------------------------------------------------
+[+] 00001      new of size 0x000000A0(00000160) by main.cpp(00105)::main
+[+] ---->             addr 0x008EA990
+[+] 00002      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008EDA90
+[+] 00003      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008EDA90           by ??(00000)::??
+[+] 00004      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008EDA90
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008EDA90           by ??(00000)::??
+[+] 00005      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008EDA90
+[+] 00006      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008EDA90           by ??(00000)::??
+[+] 00007      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008EDA90
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00008      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00009      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008EDA90           by ??(00000)::??
+[+] 00010      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00011      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00012      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00013      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00014      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00015      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00016      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00017      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00018      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00019      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00020      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00021      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00022      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00023      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00024      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00025      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00026      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00027      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00028      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00029      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00030      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00031      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00032      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00033      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00034      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00035      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00036      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00037      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00038      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00039      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00040      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00041      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00042      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00043      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00044      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00045      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00046      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00047      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00048      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00049      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00050      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00051      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00052      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00053      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00054      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00055      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EDBF0
+[+] 00056      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00057      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F30C8
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00058      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F5140
+[-] -----   delete of addr 0x008F30C8           by ??(00000)::??
+[+] 00059      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00060      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00061      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00062      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F5140           by ??(00000)::??
+[-] -----   delete of addr 0x008EDBF0           by ??(00000)::??
+[+] 00063      new of size 0x00000018(00000024) by ccamera.cpp(00130)::CCamera::Get
+[+] ---->             addr 0x008EDBF0
+[+] 00064      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00065      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[+] 00066      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F5108
+[+] 00067      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[+] 00068      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F91B8
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00069      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008FB230
+[-] -----   delete of addr 0x008F91B8           by ??(00000)::??
+[+] 00070      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00071      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00072      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00073      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00074      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00075      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00076      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00077      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00078      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[+] 00079      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7158
+[-] -----   delete of addr 0x008F7158           by ??(00000)::??
+[-] -----   delete of addr 0x008FB230           by ??(00000)::??
+[-] -----   delete of addr 0x008F5108           by ??(00000)::??
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00080      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00081      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[+] 00082      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F5118
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00083      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F7190
+[-] -----   delete of addr 0x008F5118           by ??(00000)::??
+[+] 00084      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00085      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00086      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00087      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00088      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00089      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00090      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[-] -----   delete of addr 0x008F7190           by ??(00000)::??
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00091      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00092      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[+] 00093      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F5118
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00094      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F7190
+[-] -----   delete of addr 0x008F5118           by ??(00000)::??
+[+] 00095      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00096      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00097      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00098      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00099      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[-] -----   delete of addr 0x008F7190           by ??(00000)::??
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00100      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00101      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[+] 00102      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F5118
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00103      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F7190
+[-] -----   delete of addr 0x008F5118           by ??(00000)::??
+[+] 00104      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00105      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00106      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00107      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00108      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[-] -----   delete of addr 0x008F7190           by ??(00000)::??
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00109      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F1068
+[+] 00110      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[+] 00111      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008F5118
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00112      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008F7190
+[-] -----   delete of addr 0x008F5118           by ??(00000)::??
+[+] 00113      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00114      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00115      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00116      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[+] 00117      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F30B8
+[-] -----   delete of addr 0x008F30B8           by ??(00000)::??
+[-] -----   delete of addr 0x008F7190           by ??(00000)::??
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[+] 00118      new of size 0x00000024(00000036) by cworld.cpp(00222)::CWorld::Create
+[+] ---->             addr 0x008F1068
+[+] 00119    new[] of size 0x00000438(00001080) by cworld.cpp(00015)::CWorld::CWorld
+[+] ---->             addr 0x008F30B8
+[+] 00120      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F5520
+[+] 00121      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F7570
+[+] 00122      new of size 0x00000030(00000048) by ??(00000)::??
+[+] ---->             addr 0x008F95C0
+[+] 00123      new of size 0x00000047(00000071) by ??(00000)::??
+[+] ---->             addr 0x008FB620
+[-] -----   delete of addr 0x008F95C0           by ??(00000)::??
+[+] 00124      new of size 0x0000006A(00000106) by ??(00000)::??
+[+] ---->             addr 0x008FD698
+[-] -----   delete of addr 0x008FB620           by ??(00000)::??
+[+] 00125      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F95C0
+[-] -----   delete of addr 0x008F95C0           by ??(00000)::??
+[+] 00126      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F95C0
+[-] -----   delete of addr 0x008F95C0           by ??(00000)::??
+[+] 00127      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008F95C0
+[-] -----   delete of addr 0x008F95C0           by ??(00000)::??
+[-] -----   delete of addr 0x008FD698           by ??(00000)::??
+[-] -----   delete of addr 0x008F7570           by ??(00000)::??
+[-] -----   delete of addr 0x008F5520           by ??(00000)::??
+[+] 00128    new[] of size 0x00000004(00000004) by cplayer.cpp(00195)::CPlayer::CreatePlayers
+[+] ---->             addr 0x008F5520
+[+] 00129      new of size 0x00000014(00000020) by cplayer.cpp(00197)::CPlayer::CreatePlayers
+[+] ---->             addr 0x008F7550
+[+] 00130      new of size 0x0000000C(00000012) by ctimer.cpp(00037)::CTimer::Get
+[+] ---->             addr 0x008F9590
+[+] 00131      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FB5C8
+[+] 00132      new of size 0x00000040(00000064) by ??(00000)::??
+[+] ---->             addr 0x008FD618
+[-] -----   delete of addr 0x008FB5C8           by ??(00000)::??
+[+] 00133      new of size 0x00000060(00000096) by ??(00000)::??
+[+] ---->             addr 0x008FF688
+[-] -----   delete of addr 0x008FD618           by ??(00000)::??
+[+] 00134      new of size 0x00000090(00000144) by ??(00000)::??
+[+] ---->             addr 0x00901718
+[-] -----   delete of addr 0x008FF688           by ??(00000)::??
+[+] 00135      new of size 0x000000D8(00000216) by ??(00000)::??
+[+] ---->             addr 0x008FB5C8
+[-] -----   delete of addr 0x00901718           by ??(00000)::??
+[+] 00136      new of size 0x000000A0(00000160) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00137      new of size 0x000000A0(00000160) by ??(00000)::??
+[+] ---->             addr 0x008FF7A0
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008FF7A0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by main.cpp(00192)::main
+[+] 00138      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00139      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00140      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00141      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00142      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00143      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00144      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00145      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00146      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00147      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00148      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00149      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00150      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00151      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00152      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00153      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00154      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00155      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00156      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00157      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00158      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00159      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00160      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00161      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00162      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00163      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00164      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00165      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00166      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00167      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00168      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00169      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00170      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00171      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00172      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00173      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00174      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00175      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00176      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00177      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00178      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00179      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00180      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00181      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00182      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00183      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00184      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00185      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00186      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00187      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00188      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00189      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00190      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00191      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[+] 00192      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008EA990
+[+] 00193      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FD6D0
+[+] 00194      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00195      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x00901770
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[+] 00196      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x008FF720
+[+] 00197      new of size 0x00000020(00000032) by ??(00000)::??
+[+] ---->             addr 0x009037C0
+[-] -----   delete of addr 0x008FF720           by ??(00000)::??
+[-] -----   delete of addr 0x009037C0           by ??(00000)::??
+[-] -----   delete of addr 0x00901770           by ??(00000)::??
+[-] -----   delete of addr 0x008FD6D0           by ??(00000)::??
+[-] -----   delete of addr 0x008EA990           by ??(00000)::??
+[I] NOTE! Possible destructor chain: previous owner is cworld.cpp(00233)::CWorld::Destroy
+[-] ----- delete[] of addr 0x008F30B8           by cworld.cpp(00036)::CWorld::~CWorld
+[-] -----   delete of addr 0x008F1068           by ??(00000)::??
+[-] -----   delete of addr 0x008F7550           by cplayer.cpp(00238)::CPlayer::DestroyPlayers
+[-] ----- delete[] of addr 0x008F5520           by cplayer.cpp(00240)::CPlayer::DestroyPlayers
+[-] -----   delete of addr 0x008EDBF0           by ccamera.cpp(00139)::CCamera::Destroy
+[-] -----   delete of addr 0x008F9590           by ctimer.cpp(00046)::CTimer::Destroy
+[-] -----   delete of addr 0x008FB5C8           by ??(00000)::??
