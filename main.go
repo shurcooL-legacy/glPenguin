@@ -84,13 +84,9 @@ func ProcessKey(w *glfw.Window, key glfw.Key, scancode int, action glfw.Action, 
 	}
 }
 
-var nLastMouseWheel int // = glfwGetMouseWheel();
-
-func ProcessMouseWheel(nMouseWheelPos int) {
+func ProcessScroll(w *glfw.Window, xoff float64, yoff float64) {
 	// change camera zoom
-	globalCamera.Zoom(float32(nMouseWheelPos-nLastMouseWheel) * -25)
-
-	nLastMouseWheel = nMouseWheelPos
+	globalCamera.Zoom(float32(yoff) * 25)
 }
 
 func init() {
@@ -146,7 +142,7 @@ func main() {
 	window.SetFramebufferSizeCallback(ProcessWindowResize)
 
 	window.SetKeyCallback(ProcessKey)
-	//glfwSetMouseWheelCallback(ProcessMouseWheel);
+	window.SetScrollCallback(ProcessScroll)
 	window.SetInputMode(glfw.Cursor, glfw.CursorDisabled)
 
 	InitOpenGL()
