@@ -159,20 +159,20 @@ func main() {
 	globalWorld = &world // HACK
 
 	// TODO: debug pre-set falling ice cubes, to test movement code
-	/*if (Config->GetBoolParam(false, "TestFallingStairs", "General")) {
-		world.SetIceCube(0, 0, 13, 1);
-		world.SetIceCube(1, 0, 12, 1);
-		world.SetIceCube(1, 1, 12, 1);
-		world.SetIceCube(0, 1, 13, 1);
-		world.SetIceCube(1, 0, 14, 1);
-		world.SetIceCube(2, 0, 11, 1);
-		world.SetIceCube(3, 0, 10, 1);
-		world.SetIceCube(4, 0, 9, 1);
+	if config.General.TestFallingStairs {
+		world.SetIceCube(0, 0, 13, 1)
+		world.SetIceCube(1, 0, 12, 1)
+		world.SetIceCube(1, 1, 12, 1)
+		world.SetIceCube(0, 1, 13, 1)
+		world.SetIceCube(1, 0, 14, 1)
+		world.SetIceCube(2, 0, 11, 1)
+		world.SetIceCube(3, 0, 10, 1)
+		world.SetIceCube(4, 0, 9, 1)
 
-		world.SetIceCube(5, 0, 1, 2);
-		world.SetIceCube(5, 0, 0, 2);
-		world.SetIceCube(6, 0, 0, 2);
-	}*/
+		world.SetIceCube(5, 0, 1, 2)
+		world.SetIceCube(5, 0, 0, 2)
+		world.SetIceCube(6, 0, 0, 2)
+	}
 
 	CreatePlayers(1)
 	globalCamera = NewCCamera()
