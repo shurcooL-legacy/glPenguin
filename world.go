@@ -3,7 +3,7 @@ package main
 import (
 	"math/rand"
 
-	"github.com/go-gl/glow/gl/2.1/gl"
+	"github.com/go-gl/gl/v2.1/gl"
 )
 
 const ICE_CUBE_SPAWN_HEIGHT = 10

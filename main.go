@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
-	"github.com/go-gl/glow/gl/2.1/gl"
+	"github.com/go-gl/gl/v2.1/gl"
+	"github.com/go-gl/glfw/v3.1/glfw"
 	"github.com/go-gl/mathgl/mgl64"
-	glfw "github.com/shurcooL/glfw3"
 )
 
 var g_oWindowSize [2]int
@@ -136,14 +136,14 @@ func main() {
 	}*/
 	{
 		var framebufferSize [2]int
-		framebufferSize[0], framebufferSize[1], _ = window.GetFramebufferSize()
+		framebufferSize[0], framebufferSize[1] = window.GetFramebufferSize()
 		ProcessWindowResize(window, framebufferSize[0], framebufferSize[1])
 	}
 	window.SetFramebufferSizeCallback(ProcessWindowResize)
 
 	window.SetKeyCallback(ProcessKey)
 	window.SetScrollCallback(ProcessScroll)
-	window.SetInputMode(glfw.Cursor, glfw.CursorDisabled)
+	window.SetInputMode(glfw.CursorMode, glfw.CursorDisabled)
 
 	InitOpenGL()
 
@@ -186,9 +186,9 @@ func main() {
 	globalTimer.Update()
 
 	var lastMousePos mgl64.Vec2
-	lastMousePos[0], lastMousePos[1], _ = window.GetCursorPosition()
+	lastMousePos[0], lastMousePos[1] = window.GetCursorPos()
 
-	for !mustBool(window.ShouldClose()) {
+	for !window.ShouldClose() {
 		glfw.PollEvents()
 
 		// clear opengl buffers, reset the world matrix
@@ -214,7 +214,7 @@ func main() {
 
 		// mouse calcs
 		var mousePos mgl64.Vec2
-		mousePos[0], mousePos[1], _ = window.GetCursorPosition()
+		mousePos[0], mousePos[1] = window.GetCursorPos()
 		var oMouseMoved [2]int
 		oMouseMoved[0], oMouseMoved[1] = int(mousePos[0]-lastMousePos[0]), int(mousePos[1]-lastMousePos[1])
 		lastMousePos = mousePos
@@ -246,20 +246,4 @@ func main() {
 
 	world.Close()
 	globalCamera.Close()
-}
-
-// ---
-
-func mustAction(action glfw.Action, err error) glfw.Action {
-	if err != nil {
-		panic(err)
-	}
-	return action
-}
-
-func mustBool(b bool, err error) bool {
-	if err != nil {
-		panic(err)
-	}
-	return b
 }
