@@ -1,3 +1,4 @@
+// An old game about climbing ice blocks in 3D.
 package main
 
 import (
